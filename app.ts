@@ -22,7 +22,7 @@ app.use(cookieParser());
 // origin: process.env.ORIGIN,
 app.use(
     cors({
-        origin: ['http://localhost:3000', "https://studify-client.vercel.app/"],
+        origin: ["https://studify-client.vercel.app/"],
         credentials: true,
     })
 );
