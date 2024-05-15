@@ -136,7 +136,7 @@ export const newPayment = CatchAsyncError(
     try {
       const myPayment = await stripe.paymentIntents.create({
         amount: req.body.amount,
-        currency: "USD",
+        currency: "INR",
         description: "E-learning course services",
         metadata: {
           company: "E-Learning",
@@ -145,13 +145,13 @@ export const newPayment = CatchAsyncError(
           enabled: true,
         },
         shipping: {
-          name: "Harmik Lathiya",
+          name: "yash dargan",
           address: {
-            line1: "510 Townsend St",
-            postal_code: "98140",
-            city: "San Francisco",
-            state: "CA",
-            country: "US",
+            line1: "101,ashima vihar",
+            postal_code: "240082",
+            city: "Dehradun",
+            state: "UK",
+            country: "India",
           },
         },
       });
