@@ -105,7 +105,7 @@ exports.newPayment = (0, catchAsyncErrors_1.CatchAsyncError)(async (req, res, ne
     try {
         const myPayment = await stripe.paymentIntents.create({
             amount: req.body.amount,
-            currency: "USD",
+            currency: "INR",
             description: "E-learning course services",
             metadata: {
                 company: "E-Learning",
@@ -114,13 +114,13 @@ exports.newPayment = (0, catchAsyncErrors_1.CatchAsyncError)(async (req, res, ne
                 enabled: true,
             },
             shipping: {
-                name: "Harmik Lathiya",
+                name: "yash dargan",
                 address: {
-                    line1: "510 Townsend St",
-                    postal_code: "98140",
-                    city: "San Francisco",
-                    state: "CA",
-                    country: "US",
+                    line1: "101,ashima vihar",
+                    postal_code: "240082",
+                    city: "Dehradun",
+                    state: "UK",
+                    country: "India",
                 },
             },
         });
